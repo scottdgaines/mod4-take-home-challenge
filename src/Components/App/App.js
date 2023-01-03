@@ -7,19 +7,16 @@ import fetchData from '../../apiCalls'
 const App = () => {
     const [articles, setArticles] = useState([])
 
-
     useEffect (() => {
         fetchData()
         .then((cleanedArticles) => setArticles(cleanedArticles))
     }, [])
 
-    console.log('articles', articles)
-
     return (
         <main>
             <h1 className="header">The Schenectady Minutes</h1>
             <Route exact path="/">
-                <Container />
+                <Container articles={articles} />
             </Route>
             <Route path="/:key">
                 <DetailView />

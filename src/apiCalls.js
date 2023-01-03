@@ -15,7 +15,6 @@ const fetchData = async () => {
     }   catch (error) {
         return "there was an error"
     }
-
 }
 
 export default fetchData

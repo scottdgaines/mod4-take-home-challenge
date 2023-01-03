@@ -1,14 +1,31 @@
 import React from 'react'
-import { Link, Route } from 'react-router-dom'
+import Card from '../Card/Card'
+import './Container.css'
 
-const Container = () => {
-    // const articleCards = 
+const Container = ({ articles }) => {
+    let counter = 0
+    
+    const articleCards = articles.map(article => {
+        counter = counter + 1
+        return (
+            <Card 
+                key={counter}
+                id={counter}
+                title={article.title}
+                byline={article.byline}
+                image={article.image}
+            />
+        )
+    })
 
-  return (
-    <section>
-        <p>hello from the container</p>
-    </section>
-  )
+    return (
+        <section>
+            <p>Today's Headlines</p>
+            <div className="preview-container">
+                {articleCards}
+            </div>
+        </section>
+    )
 }
 
 export default Container

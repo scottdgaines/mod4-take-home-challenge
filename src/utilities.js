@@ -7,7 +7,9 @@ const cleanData = (data) => {
             abstract: article.abstract,
             url: article.url,
             byline: article.byline,
-            datePublished: article.published_date
+            datePublished: article.published_date,
+            key: article.created_date,
+            image: article.multimedia[0].url
         }
     })
 

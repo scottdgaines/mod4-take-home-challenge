@@ -1,11 +1,17 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import './Card.css'
 
-const Card = () => {
+const Card = ({ id, title, byline, image }) => {
+
   return (
-      <Link to="/:key">
-        <p>this is a card</p>
+    <div className="card">
+      <Link to="/:id">
+        <img src={image} className="article-image" />
+        <h2>{title}</h2>
+        <p>{byline}</p>
       </Link>
+    </div>
   )
 }
 
