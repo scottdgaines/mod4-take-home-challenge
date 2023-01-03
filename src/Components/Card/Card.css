@@ -1,0 +1,10 @@
+.article-image {
+    width: 200px;
+}
+
+.card {
+    border: 2px solid black;
+    width: 200px;
+    display: flex;
+    margin: 5px;
+}
