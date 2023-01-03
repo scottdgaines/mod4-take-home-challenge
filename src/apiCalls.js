@@ -7,7 +7,7 @@ const fetchData = async () => {
         const cleanedArticles = cleanData(data)
     
         if (!response.ok) {
-            return;
+            return
         }
 
         return cleanedArticles
@@ -18,5 +18,3 @@ const fetchData = async () => {
 }
 
 export default fetchData
-
-

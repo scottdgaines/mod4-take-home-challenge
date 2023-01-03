@@ -2,15 +2,12 @@ import React from 'react'
 import Card from '../Card/Card'
 import './Container.css'
 
-const Container = ({ articles }) => {
-    let counter = 0
-    
+const Container = ({ articles, id }) => {
     const articleCards = articles.map(article => {
-        counter = counter + 1
         return (
             <Card 
-                key={counter}
-                id={counter}
+                key={article.id}
+                id={article.id}
                 title={article.title}
                 byline={article.byline}
                 image={article.image}
@@ -20,7 +17,7 @@ const Container = ({ articles }) => {
 
     return (
         <section>
-            <p>Today's Headlines</p>
+            <p className="container-title">Today's Headlines</p>
             <div className="preview-container">
                 {articleCards}
             </div>
