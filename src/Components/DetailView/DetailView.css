@@ -1,0 +1,8 @@
+.detail-view {
+    display: flex;
+    flex-direction: row;
+}
+
+.detail-view-image {
+    width: 400px;
+}
