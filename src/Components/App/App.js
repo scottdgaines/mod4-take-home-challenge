@@ -7,6 +7,7 @@ import './App.css'
 
 const App = () => {
     const [articles, setArticles] = useState([])
+    const [searchQuery, setSearchQuery] = useState('')
 
     useEffect (() => {
         fetchData()
@@ -19,7 +20,12 @@ const App = () => {
                 <h1 className="page-title">The Schenectady Minutes</h1>
             </header>
             <Route exact path="/">
-                <Container articles={articles} />
+                <Container 
+                    articles={articles}
+                    setArticles={setArticles}
+                    searchQuery={searchQuery}
+                    setSearchQuery={setSearchQuery} 
+                />
             </Route>
             <Route 
                 exact path="/:id"
