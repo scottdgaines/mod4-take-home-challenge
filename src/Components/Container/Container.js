@@ -22,17 +22,25 @@ const Container = ({ articles, setArticles, searchQuery, setSearchQuery }) => {
         fetchData(searchQuery)
         .then((cleanedArticles) => setArticles(cleanedArticles))
 
-        const headlineSection = searchQuery.charAt(0).toUpperCase() + searchQuery.slice(1)
-
-        setHeadline(`Today's Headlines in ${headlineSection}`)
+        updateHeadline()
     }
+    
+    const updateHeadline = () => {
+         const headlineSection = searchQuery.charAt(0).toUpperCase() + searchQuery.slice(1)
+     
+         if (headlineSection === "Home") {
+             setHeadline('Today\'s Headlines')
+         } else {
+             setHeadline(`Today's Headlines in ${headlineSection}`)
+         }
+     }
 
     return (
         <section>
             <div className="container-header">
                 <p className="container-title">{headline}</p>
                 <div className="filter">
-                    <label>Filter Articles by Topic: </label>
+                    <label>Display Articles by Topic: </label>
                     <select 
                         value={searchQuery}
                         onChange={(event) => setSearchQuery(event.target.value)}>
@@ -63,7 +71,7 @@ const Container = ({ articles, setArticles, searchQuery, setSearchQuery }) => {
                         <option value="us">US</option>
                         <option value="world">World</option>
                     </select>
-                    <button onClick={handleClick}>Filter</button>
+                    <button onClick={handleClick}>Submit</button>
                 </div>
             </div>
             <div className="preview-container">

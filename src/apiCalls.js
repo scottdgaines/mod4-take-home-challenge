@@ -3,14 +3,14 @@ import cleanData from './utilities'
 const KEY = process.env.REACT_APP_API_KEY
 
 const fetchData = async (category) => {
-    console.log('categ', category)
+    let url = `https://api.nytimes.com/svc/topstories/v2/${category}.json?api-key=${KEY}`
+
     try {
-        const response = await fetch(`https://api.nytimes.com/svc/topstories/v2/${category}.json?api-key=${KEY}`)
+        const response = await fetch(url)
         const data = await response.json()
         const cleanedArticles = cleanData(data)
-        console.log(cleanedArticles)
 
-        if (!response.ok || cleanedArticles.length === 0) {
+        if (!response.ok) {
             return
         }
 

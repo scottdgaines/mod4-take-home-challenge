@@ -1,6 +1,6 @@
 .page-title {
     font-family: 'New Rocker', cursive;
-    font-size: 10vh;
+    font-size: 6vw;
 }
 
 header {
@@ -9,13 +9,6 @@ header {
 }
 
 @media screen and (max-width: 400px) {
-    .page-title {
-        font-size: 15vw;
-        margin: 0 auto;
-    }
-}
-
-@media screen and (min-width: 401px) {
     .page-title {
         font-size: 15vw;
         margin: 0 auto;
