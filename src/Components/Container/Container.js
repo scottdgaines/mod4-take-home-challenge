@@ -5,24 +5,21 @@ import fetchData from '../../apiCalls'
 
 const Container = ({ articles, setArticles, searchQuery, setSearchQuery }) => {
     const [headline, setHeadline] = useState('Today\'s Headlines')
-    let errorMessage
-    let articleCards
-
-    if (articles != null) {
-        articleCards = articles.map(article => {
-            return (
-                <Card 
-                    key={article.id}
-                    id={article.id}
-                    title={article.title}
-                    byline={article.byline}
-                    image={article.image}
-                />
-            )
-        })
-    } else {
-        errorMessage = "Something went wrong"
-    }
+        
+    const articleCards = articles.filter(article => {
+        return article.byline != ""
+    }).map(article => {
+        return (
+            <Card 
+                key={article.id}
+                id={article.id}
+                title={article.title}
+                byline={article.byline}
+                image={article.image}
+            />
+        )
+    })
+  
   
     const handleClick = () => {
         fetchData(searchQuery)
@@ -82,7 +79,6 @@ const Container = ({ articles, setArticles, searchQuery, setSearchQuery }) => {
             </div>
             <div className="preview-container">
                 {articleCards}
-                {errorMessage}
             </div>
         </section>
     )
