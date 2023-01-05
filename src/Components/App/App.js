@@ -7,10 +7,10 @@ import './App.css'
 
 const App = () => {
     const [articles, setArticles] = useState([])
-    const [searchQuery, setSearchQuery] = useState('')
+    const [searchQuery, setSearchQuery] = useState('home')
 
     useEffect (() => {
-        fetchData()
+        fetchData(searchQuery)
         .then((cleanedArticles) => setArticles(cleanedArticles))
     }, [])
 
@@ -30,6 +30,7 @@ const App = () => {
             <Route 
                 exact path="/:id"
                 render={({ match }) => {
+                    console.log(match.params)
                     const id = match.params.id
                     return (
                         <DetailView 

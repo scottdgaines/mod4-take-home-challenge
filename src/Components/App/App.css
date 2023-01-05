@@ -1,9 +1,16 @@
 .page-title {
     font-family: 'New Rocker', cursive;
-    font-size: 10vh;
+    font-size: 6vw;
 }
 
 header {
     display: flex;
     justify-content: center;
+}
+
+@media screen and (max-width: 400px) {
+    .page-title {
+        font-size: 15vw;
+        margin: 0 auto;
+    }
 }
