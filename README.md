@@ -16,6 +16,9 @@ The process began with a thorough planning phase including Component Architectur
 - Component architecture was based on the desire to maintain a constant page header, with the article preview container dynamically changing to the article detailed view based on the article selected.
 - The fetch call to the API was chosen to live in the App component, though an independent apiCalls.js file was used for the sake of modular architecture
 - The wireframe was intentionally kept bare-bones for the sake of time
+<img width="785" alt="Screen Shot 2023-01-05 at 1 59 28 PM" src="https://user-images.githubusercontent.com/103966650/210883765-e6918f06-5e2f-4adc-ac51-7052f0987247.png">
+<img width="922" alt="Screen Shot 2023-01-05 at 1 59 20 PM" src="https://user-images.githubusercontent.com/103966650/210883799-61ffd561-382f-4f21-8407-3b81896b667f.png">
+
 
 ## Build
 The coding process too approximately 8 of the 9 hours, and was guided using a Project Board with corresponding user stories and acceptance criteria
@@ -26,4 +29,8 @@ The coding process too approximately 8 of the 9 hours, and was guided using a Pr
 
 ### Challenges
 - Dynamic Routing: if I were to do the project over, instead of creating a new id property for each article preview that would then be used for the dynamic routing, I would instead use a property already inherent in the dataset as provided by the API. 
+
+## Testing
+Given the time constraints of the challenge, I was only able to test happy paths of the application using Cypress
+<img width="1356" alt="Screen Shot 2023-01-05 at 2 27 49 PM" src="https://user-images.githubusercontent.com/103966650/210883653-4da544bd-5859-4670-801c-1e28c1957aa4.png">
 
