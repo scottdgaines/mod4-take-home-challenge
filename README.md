@@ -1,5 +1,5 @@
 # The Schenectady Minutes
-[Project Board](https://trello.com/b/4SxKRsYm/take-home-challenge) | [Wireframe and Architecture](https://miro.com/app/board/uXjVP1pSnrQ=/) | [Time Log](https://docs.google.com/spreadsheets/d/1sUKcc47ER7Kk--6nNqp-bDU6rWDw5E0zG5zQJjlmPR8/edit?usp=sharing)
+[Project Board](https://trello.com/b/4SxKRsYm/take-home-challenge) | [Wireframe and Architecture](https://miro.com/app/board/uXjVP1pSnrQ=/) | [Time Log](https://docs.google.com/spreadsheets/d/1sUKcc47ER7Kk--6nNqp-bDU6rWDw5E0zG5zQJjlmPR8/edit?usp=sharing) | [API Documentation](https://developer.nytimes.com/docs/top-stories-product/1/overview)
 
 ## Overview
 This app allows a user to preview all the top stories of the day as set by the NYTimes. A user can either filter the topic of articles they are viewing and / or select an article preview to view it's details
@@ -31,6 +31,6 @@ The coding process too approximately 8 of the 9 hours, and was guided using a Pr
 - Dynamic Routing: if I were to do the project over, instead of creating a new id property for each article preview that would then be used for the dynamic routing, I would instead use a property already inherent in the dataset as provided by the API. 
 
 ## Testing
-Given the time constraints of the challenge, I was only able to test happy paths of the application using Cypress
+Given the time constraints of the challenge, I was only able to test happy paths of the application using Cypress, but achieved a pass rate of 100%
 <img width="1356" alt="Screen Shot 2023-01-05 at 2 27 49 PM" src="https://user-images.githubusercontent.com/103966650/210883653-4da544bd-5859-4670-801c-1e28c1957aa4.png">
 
