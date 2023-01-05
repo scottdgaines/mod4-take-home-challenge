@@ -16,16 +16,18 @@ const DetailView = ({ articles, id }) => {
 
   return (
     <section>
+      <Link to="/">Return Home</Link>
       <h2 className="detail-title">{article.title}</h2>
       <h3>{article.byline}</h3>
       <p>{article.section}{subsection}</p>
       <div className="detail-view">
         <img src={article.image} className="detail-view-image" />
-        <p>{article.abstract}</p>
+        <div className="detail-article">
+          <p>{article.abstract}</p>
+          <p>To read the full article visit <a href={article.url}>this site</a></p>
+        </div>
       </div>
-      <p>To read the full article visit <a href={article.url}>this site</a></p>
       <p>{article.datePublished}</p>
-      <Link to="/">Return Home</Link>
     </section>
   )
 }

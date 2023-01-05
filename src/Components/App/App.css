@@ -7,3 +7,17 @@ header {
     display: flex;
     justify-content: center;
 }
+
+@media screen and (max-width: 400px) {
+    .page-title {
+        font-size: 15vw;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (min-width: 401px) {
+    .page-title {
+        font-size: 15vw;
+        margin: 0 auto;
+    }
+}
