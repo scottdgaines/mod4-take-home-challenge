@@ -1,0 +1,47 @@
+{
+    "status": "OK",
+    "copyright": "Copyright (c) 2023 The New York Times Company. All Rights Reserved.",
+    "section": "home",
+    "last_updated": "2023-01-05T13:29:09-05:00",
+    "num_results": 32,
+    "results": [
+    {
+        "section": "test section",
+        "subsection": "test subsection",
+        "title": "Test Title",
+        "abstract": "Test Abstract",
+        "url": "https://www.nytimes.com/interactive/2023/01/04/us/politics/house-speaker-vote-tally.html",
+        "uri": "nyt://interactive/bbcc471e-25a5-52d9-8948-19cba3a5ab04",
+        "byline": "Test Byline",
+        "item_type": "Interactive",
+        "updated_date": "2023-01-05T13:18:51-05:00",
+        "created_date": "2023-01-04T12:31:47-05:00",
+        "published_date": "Test Published Date",
+        "material_type_facet": "",
+        "kicker": "",
+        "des_facet": [ ],
+        "org_facet": [
+            "House of Representatives",
+            "Republican Party",
+            "Democratic Party"
+        ],
+    "per_facet": [
+        "McCarthy, Kevin (1965- )"
+    ],
+    "geo_facet": [ ],
+    "multimedia": [
+        {
+        "url": "https://static01.nyt.com/images/2023/01/04/us/house-speaker-vote-tally-promo/house-speaker-vote-tally-promo-superJumbo.jpg",
+        "format": "Super Jumbo",
+        "height": 1333,
+        "width": 2000,
+        "type": "image",
+        "subtype": "photo",
+        "caption": "",
+        "copyright": ""
+        }
+    ],
+    "short_url": "https://nyti.ms/3CmBDFI"
+    }
+    ]
+}   
