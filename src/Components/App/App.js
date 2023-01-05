@@ -30,7 +30,6 @@ const App = () => {
             <Route 
                 exact path="/:id"
                 render={({ match }) => {
-                    console.log(match.params)
                     const id = match.params.id
                     return (
                         <DetailView 
