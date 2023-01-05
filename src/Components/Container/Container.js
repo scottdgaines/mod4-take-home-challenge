@@ -5,8 +5,10 @@ import fetchData from '../../apiCalls'
 
 const Container = ({ articles, setArticles, searchQuery, setSearchQuery }) => {
     const [headline, setHeadline] = useState('Today\'s Headlines')
-
-    let articleCards = articles.map(article => {
+        
+    const articleCards = articles.filter(article => {
+        return article.byline != ""
+    }).map(article => {
         return (
             <Card 
                 key={article.id}
@@ -17,6 +19,7 @@ const Container = ({ articles, setArticles, searchQuery, setSearchQuery }) => {
             />
         )
     })
+  
   
     const handleClick = () => {
         fetchData(searchQuery)
