@@ -21,7 +21,7 @@ The process began with a thorough planning phase including Component Architectur
 
 
 ## Build
-The coding process too approximately 8 of the 9 hours, and was guided using a Project Board with corresponding user stories and acceptance criteria
+The coding process took approximately 8 of the 9 hours, and was guided using a Project Board with corresponding user stories and acceptance criteria
 ### Wins
 - The use of dynamic variables to display information specific to the user's choices
 - The initial plan was to take the original array of articles provided by the API and filter through them and render only the articles that pertained to a specific topic as set by the user. I instead chose to use the varied endpoints as provided by the API to instead refetch a new set of articles from the user-specified topic.
